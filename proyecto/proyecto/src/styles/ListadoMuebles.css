@@ -1,0 +1,109 @@
+.listado-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.listado-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.btn-agregar {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 12px 25px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.btn-agregar:hover {
+    background-color: #218838;
+}
+
+
+.productos-flex {
+    display: flex;
+    flex-wrap: wrap;          
+    justify-content: center;  
+    gap: 25px;                
+}
+
+.producto {
+    flex: 0 1 250px;          
+    max-width: 300px;          
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    max-height: 140px;
+    object-fit: contain;       
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.producto p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.producto a {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 8px 5px 0 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-detalle {
+    background-color: #007bff;
+}
+
+.btn-detalle:hover {
+    background-color: #0056b3;
+}
+
+.btn-borrar {
+    background-color: #dc3545;
+}
+
+.btn-borrar:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+    .producto {
+        flex: 0 1 90%; 
+    }
+
+    .producto img {
+        max-height: 120px;
+    }
+
+    .producto a {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}
