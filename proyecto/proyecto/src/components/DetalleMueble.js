@@ -1,4 +1,5 @@
 import { getProductById } from "../services/api";
+import "../styles/DetalleMuebleYBorrado.css";
 export async function DetalleMueble(id) {
   const producto = await getProductById(id);
 

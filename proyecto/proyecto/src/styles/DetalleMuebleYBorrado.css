@@ -1,0 +1,70 @@
+.detalle-mueble {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 22px;
+  border-radius: 14px;
+  background: #fafafa;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+
+.detalle-mueble h2 {
+  margin: 0;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.detalle-mueble p {
+  margin: 4px 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+.detalle-mueble strong {
+  font-weight: 700;
+  color: #111;
+}
+
+.btn-borrar,
+.btn-volver-borrar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.15s ease;
+}
+
+.btn-borrar {
+  background: #d62828;
+  color: #fff;
+  border: none;
+}
+
+.btn-borrar:hover {
+  background: #b91f1f;
+}
+
+.btn-volver-borrar {
+  background: #e6e6e6;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.btn-volver-borrar:hover {
+  background: #dcdcdc;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .detalle-mueble {
+    margin: 16px;
+    padding: 18px;
+  }
+}

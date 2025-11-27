@@ -40,3 +40,17 @@ export async function getProductById(id){
     return null;
   }
 }
+
+export async function deleteProductById(id) {
+    try {
+        const res = await fetch(API_URL + "/" + id, {
+            method:"DELETE",
+        });
+        if(!res.ok){
+            throw new Error(`Error en la petición: ${res.status}`);
+        }
+    } catch (error) {
+        console.error(error);
+        return [];
+    }
+}
