@@ -1,4 +1,3 @@
-// Favoritos.js
 export function getFavoritos() {
   const fav = localStorage.getItem("favoritos");
   return fav ? JSON.parse(fav) : [];
